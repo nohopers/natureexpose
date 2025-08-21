@@ -75,3 +75,9 @@ a:hover {
 .flex-item{
     flex-grow: 1;
 }
+
+/* Mobile overrides for any fixed artboard sizing in this file */
+@media (max-width: 768px) {
+  .artboard, .canvas, .stage { width: 100% !important; }
+  .layer, .tile, .card { max-width: 100% !important; }
+}
