@@ -81,3 +81,27 @@ a:hover {
   .artboard, .canvas, .stage { width: 100% !important; }
   .layer, .tile, .card { max-width: 100% !important; }
 }
+
+/* --- Full-bleed section helper (keeps your colors/formatting) --- */
+.bleed {
+  /* let this element escape any centered container on all screens */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Make sure nothing causes horizontal scrolling */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+body { margin: 0; overflow-x: hidden; }
+
+/* If any blocks had fixed widths/heights, relax them on mobile only */
+@media (max-width: 768px) {
+  .bleed { border-radius: 0; }        /* optional: square edges to the screen */
+  .bleed, .bleed * { max-width: 100%; }
+  [style*="width:"] { width: 100% !important; max-width: 100% !important; }
+  [style*="left:"], [style*="right:"] { left: auto !important; right: auto !important; }
+}
