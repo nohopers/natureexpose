@@ -123,3 +123,41 @@ h1, h2 {
 	 .fluid   { width: 100% !important; max-width: 100% !important; }
 	 .stack   { display: grid; gap: var(--space); }
 	 .center  { margin-inline: auto; }
+
+/* --- Responsive link tree --- */
+
+/* Base link block styling: full width on phones */
+.link-tree a,
+.link-block,
+.tile, 
+a.tile {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  text-align: center;        /* keep text centered */
+  box-sizing: border-box;    /* padding doesn’t blow up widths */
+}
+
+/* Optional: add consistent spacing */
+.link-tree a:last-child,
+.link-block:last-child,
+.tile:last-child { margin-bottom: 0; }
+
+/* On medium screens, allow 2 side-by-side */
+@media (min-width: 600px) {
+  .link-tree, .links, .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .link-tree a,
+  .link-block,
+  .tile { width: 100%; margin-bottom: 0; }
+}
+
+/* On large screens, you can go 3-across if you like */
+@media (min-width: 1024px) {
+  .link-tree, .links, .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
