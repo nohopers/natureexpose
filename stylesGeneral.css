@@ -165,6 +165,8 @@ a.tile {
 /* --- Force underline on all links --- */
 a {
   text-decoration: underline;
+  display: inline-block;   /* helps with spacing when wrapping */
+  margin: 0 0.5rem;        /* left and right breathing space */
 }
 
 /* If you want the underline to stay even on hover/visited */
