@@ -161,3 +161,14 @@ a.tile {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* --- Force underline on all links --- */
+a {
+  text-decoration: underline;
+}
+
+/* If you want the underline to stay even on hover/visited */
+a:hover, 
+a:visited {
+  text-decoration: underline;
+}
