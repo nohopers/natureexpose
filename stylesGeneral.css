@@ -1,0 +1,46 @@
+/*  OVERARCHING STYLES FOR FORYOURBRAIN */
+
+/* navigation bar */
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 3em 0em;
+	padding: 1em;
+	list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+#nav li {
+  float: left;
+	display: block;
+	padding-right: 10px;
+	text-decoration: none;
+  flex: 0 0 auto;
+}
+
+#nav li a {
+  color: hotpink;
+}
+
+#nav li a:hover {
+  color: black;
+}
+
+#navbox {
+}
+
+.clr {
+    clear:both;
+    font-size:0;
+}
+
+html, body {
+      background-color: black; /* change to any colour you want */
+			min-height: 100%;          /* ensures it fills even when content is short */
+    }
+
+h1, h2 {
+     color: white; /* makes heading text white */
+   }

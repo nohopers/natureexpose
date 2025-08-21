@@ -1,0 +1,77 @@
+/* UNIQUE STYLESHEET FOR ARTICLE #0001 */
+
+/* videos and images */
+.imgL {
+  float: left;
+}
+
+.imgR {
+  float: right;
+}
+
+video {
+  float: right;
+}
+
+/* text blocks */
+.container {
+	width: 100%;
+}
+
+.std {
+  padding: 10px;
+  margin: 0px;
+	width: 50%;
+}
+
+.stdlink {
+  padding: 10px;
+  margin: 0px;
+	width: 50%;
+}
+
+.std2 {
+  padding: 10px;
+  margin: 0px;
+	width: 40%;
+	float: right;
+}
+
+.std3 {
+  padding: 10px;
+  margin: 0px;
+	width: 30%;
+}
+
+.std4 {
+  padding: 10px;
+  margin: 0px;
+	width: 30%;
+}
+
+.stdx {
+  padding: 10px;
+  margin: 0px;
+	width: 100%;
+}
+
+
+/* links */
+a {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+
+.container{
+    display: flex;
+}
+.fixed{
+    width: 50%;
+}
+.flex-item{
+    flex-grow: 1;
+}
